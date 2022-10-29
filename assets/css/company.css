@@ -1,0 +1,32 @@
+.company .partner_details {
+  gap: 30px;
+}
+.company .partner_details h3 {
+  margin-bottom: 0;
+}
+.company .partner_details img {
+  margin-bottom: 0;
+}
+.company .partner_text {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 0;
+}
+.company .partner_text h3 {
+  font-size: 2rem;
+}
+.company .partner_text p {
+  line-height: initial;
+}
+.companyInfo {
+  padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .company .partner_details {
+    gap: 15px;
+  }
+  .companyInfo {
+    padding-left: 10px;
+  }
+}/*# sourceMappingURL=company.css.map */

@@ -46,13 +46,13 @@
 
 .slider_content h2 {
   font-weight: 800;
-  font-size: 60px;
+  font-size: 6rem;
   line-height: 80px;
   text-transform: uppercase;
 }
 .slider_content p {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 177%;
   width: 80%;
 }
@@ -75,7 +75,7 @@
   align-items: center;
   text-align: left;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 150%;
   cursor: pointer;
   position: relative;

@@ -1,1 +1,39 @@
-/*# sourceMappingURL=banner.css.map */
+.banner {
+  text-align: center;
+}
+.banner .container {
+  padding-top: 70px;
+}
+.bannerContent {
+  max-width: 750px;
+  margin: auto;
+}
+.bannerContent h1 {
+  font-size: 5rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 6.5rem;
+  padding-bottom: 55px;
+  color: #191919;
+}
+.bannerContent p {
+  font-size: 2.5rem;
+  line-height: 3.3rem;
+  color: #808080;
+}
+@media (max-width: 768px) {
+  .banner .container {
+    padding-top: 48px;
+  }
+  .bannerContent h1 {
+    font-size: 2.5rem;
+    line-height: 1.3em;
+    padding-bottom: 20px;
+    letter-spacing: 0.2px;
+  }
+  .bannerContent p {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #808080;
+  }
+}/*# sourceMappingURL=banner.css.map */

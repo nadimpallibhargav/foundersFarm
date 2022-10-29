@@ -1,3 +1,17 @@
+/* colors */
+.red {
+  color: #ea4335;
+}
+.blue {
+  color: #4285f4;
+}
+.green {
+  color: #34a853;
+}
+.yellow {
+  color: #f9ab00;
+}
+
 /* container styles start  */
 .container {
   width: 100%;
@@ -18,7 +32,7 @@ section {
 }
 .commonHeading label {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
   color: #808080;
   letter-spacing: 0.03em;
@@ -29,7 +43,7 @@ section {
 
 .commonHeading h2 {
   font-weight: 600;
-  font-size: 40px;
+  font-size: 4rem;
   line-height: 150%;
   color: #191919;
   position: relative;
@@ -56,7 +70,7 @@ section {
   border: 1px solid #fd6400;
   color: #ffffff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
 }
 .orange-btn:hover {
@@ -72,7 +86,7 @@ section {
   padding: 16px;
   border: 1px solid #ffffff;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 24px;
   color: #191919;
   width: 200px;

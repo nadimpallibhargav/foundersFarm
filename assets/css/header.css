@@ -20,6 +20,14 @@ header.transform {
   transition: all 0.5s ease-in-out;
 }
 
+header img {
+  max-width: 80px;
+}
+
+header.sticky img {
+  max-width: 50px;
+}
+
 header.sticky .container {
   border-bottom: none;
 }
@@ -96,7 +104,6 @@ header .logo img {
 
 .header_links {
   display: flex;
-  width: 64%;
   justify-content: space-between;
   align-items: center;
 }
@@ -117,20 +124,10 @@ header .logo img {
   margin-right: 40px;
 }
 
-@media screen and (max-width: 1200px) {
-  .header_links {
-    width: 68%;
-  }
-}
-
 @media screen and (max-width: 991px) {
   .header_links ul li a {
     margin-right: 20px;
     font-size: 16px;
-  }
-
-  .header_links {
-    width: 77%;
   }
 
   .nav_login {

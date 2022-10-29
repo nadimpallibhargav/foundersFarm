@@ -5,12 +5,20 @@
 @import "./slider.css";
 @import "./footer.css";
 @import "./modal.css";
+@import "./banner.css";
+@import "./mission.css";
+@import "./company.css";
+@import "./journey.css";
 
 /* common styles start  */
 body {
   font-family: "Inter", sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;  
+}
+
+html {
+  font-size: 10px;
 }
 
 * {
@@ -35,10 +43,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.aboutus_text {
-  flex-basis: 45%;
+  padding-bottom: 40px;
 }
 
 .aboutus .commonHeading.mobileHeading {
@@ -47,6 +52,17 @@ body {
 
 .aboutus .commonHeading {
   margin-bottom: 37px;
+}
+
+.aboutus .missionVideo {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 25px;    
+}
+.aboutus iframe {
+  position: absolute;
+  width: 100%!important;
+  height: 100%!important;
 }
 
 .aboutus_text ul li span:first-child {
@@ -60,7 +76,7 @@ body {
 
 .aboutus_text ul li label {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: #464646;
 }
@@ -109,7 +125,7 @@ body {
 
 .aboutus_image .aboutus_videoicon span:last-child {
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
   text-transform: uppercase;
   color: #fd6401;
@@ -170,14 +186,14 @@ body {
 
 .team_name h3 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 180%;
   color: #191919;
 }
 
 .team_card p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: #464646;
 }
@@ -187,7 +203,7 @@ body {
 }
 
 .team_text p {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 /* Style the counter cards */
@@ -219,7 +235,7 @@ body {
 .team_card .hidden p {
   color: #ffffff;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1.5rem;
   line-height: 180%;
 }
 
@@ -309,7 +325,7 @@ body {
 
 .panels_details .panels_text h4 {
   font-weight: 600;
-  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 150%;
   color: #ffffff;
   margin-bottom: 16px;
@@ -317,7 +333,7 @@ body {
 
 .whatwedo .panels_details .panels_text p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: #f0f0f0;
   margin-bottom: 24px;
@@ -352,7 +368,7 @@ body {
 }
 
 .whatwedo .tabs li {
-  font-size: 22px;
+  font-size: 2.2rem;
   font-weight: 400;
   color: #464646;
   padding: 8px;
@@ -389,7 +405,7 @@ body {
 
 .partner_text h3 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 150%;
   color: #191919;
   margin-bottom: 10px;
@@ -402,7 +418,7 @@ body {
 
 .partner_text p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: #464646;
 }
@@ -483,7 +499,7 @@ body {
 
 .faq_header h3 button span {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 150%;
   color: #464646;
 }
@@ -537,7 +553,7 @@ body {
   padding-top: 16px;
   padding-right: 48px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: #464646;
 }
@@ -589,7 +605,7 @@ body {
 
 .testimonials .testimonials_details .testimonials_text h4 {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 180%;
   color: #ffffff;
   margin-top: 32px;
@@ -597,14 +613,14 @@ body {
 
 .testimonials .testimonials_details .testimonials_text p {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 167%;
   color: #ffffff;
   margin-bottom: 0;
 }
 
 .testimonials .testimonials_details .testimonials_text p:last-child {
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: rgba(255, 255, 255, 0.8);
 }
@@ -633,7 +649,7 @@ body {
 
 .differentiators_tab h3 {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 150%;
   color: #5d5d5d;
   position: relative;
@@ -673,7 +689,7 @@ body {
 
 .differentiators_tab p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 180%;
   color: #464646;
   display: none;
@@ -738,7 +754,7 @@ body {
 
 .locations_text h3 {
   font-weight: 600;
-  font-size: 32px;
+  font-size: 3.2rem;
   line-height: 180%;
   color: #ffffff;
   position: relative;
@@ -758,7 +774,7 @@ body {
 
 .locations_text p {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 150%;
   color: #ccd7dc;
 }
@@ -799,17 +815,17 @@ body {
   }
 
   .commonHeading label {
-    font-size: 12px;
+    font-size: 1.2rem;
     margin-bottom: 8px;
   }
 
   .commonHeading h2 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   .orange-btn {
     padding: 11px;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .testimonials .testimonials_imagewrapper {
@@ -818,17 +834,17 @@ body {
   }
 
   .testimonials .testimonials_details .testimonials_text p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 180%;
   }
 
   .testimonials .testimonials_details .testimonials_text h4 {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-top: 24px;
   }
 
   .testimonials .testimonials_details .testimonials_text p:last-child {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 }
 
@@ -890,7 +906,7 @@ body {
   }
 
   .whatwedo .tabs li {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 }
 
@@ -908,12 +924,12 @@ body {
   }
 
   .slider_content h2 {
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 48px;
   }
 
   .slider_content p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 25px;
     width: 100%;
   }
@@ -1035,12 +1051,8 @@ body {
     margin-right: 0px;
   }
 
-  .footer {
-    padding-top: 64px;
-  }
-
   .footer_subscribetext p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 150%;
     max-width: 100%;
   }
@@ -1051,7 +1063,7 @@ body {
   }
 
   .footer_subscribeform .emailinput input {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   .footer_subscribeform .emailinput img {
@@ -1108,10 +1120,6 @@ body {
     flex-basis: 100%;
   }
 
-  .footer_copyrights {
-    flex-direction: column;
-  }
-
   .footer_copyrights div:first-child {
     margin-bottom: 12px;
   }
@@ -1136,17 +1144,12 @@ body {
 
   .footer_copyrights p,
   .footer_copyrights ul li:last-child a {
-    color: #ccd6db;
     line-height: 160%;
-  }
-
-  .footer_copyrights {
-    padding-bottom: 42px;
   }
 
   .aboutus_image .aboutus_videoicon span:last-child,
   .aboutus_text ul li label {
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .aboutus_text ul li span:first-child {
@@ -1208,12 +1211,12 @@ body {
   }
 
   .team_name h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
   }
 
   .team_card p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 180%;
   }
 
@@ -1231,12 +1234,12 @@ body {
   }
 
   .partner_text h3 {
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-bottom: 12px;
   }
 
   .partner_text p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 150%;
   }
 
@@ -1254,12 +1257,12 @@ body {
   }
 
   .panels_details .panels_text h4 {
-    font-size: 20px;
+    font-size: 2rem;
     margin-bottom: 8px;
   }
 
   .whatwedo_tabs .panels_details .panels_text p {
-    font-size: 14px;
+    font-size: 1.4rem;
     line-height: 150%;
     max-width: 244px;
   }
@@ -1267,7 +1270,7 @@ body {
   .panels_text a.white-btn {
     width: 120px;
     padding: 8px 28px;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   .whatwedo_tabs .panels .panel:first-child .panels_details {
@@ -1364,7 +1367,7 @@ body {
   }
 
   .faq_header h3 button span {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .faq_header h3 button img {
@@ -1407,7 +1410,7 @@ body {
   }
 
   .differentiators_tab p {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-top: 0px;
     display: block;
     padding: 0;
@@ -1419,7 +1422,7 @@ body {
 
   .differentiators_tab h3 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 150%;
     color: #191919 !important;
     padding: 0;
@@ -1460,11 +1463,11 @@ body {
   }
 
   .locations_text h3 {
-    font-size: 24px;
+    font-size: 2.4rem;
   }
 
   .locations_text p {
-    font-size: 16px;
+    font-size: 1.6rem;
   }
 
   .locations_text:last-child {

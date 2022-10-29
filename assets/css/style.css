@@ -128,7 +128,7 @@ html {
   font-size: 1.6rem;
   line-height: 150%;
   text-transform: uppercase;
-  color: #fd6401;
+  color: #ffffff;
 }
 
 .aboutus_image .aboutus_videoicon span:first-child {
@@ -340,7 +340,7 @@ html {
 }
 
 .panels_text a.white-btn:hover {
-  color: #fd6400;
+  color: #4a6741;
 }
 
 .panels_text a.white-btn {
@@ -381,7 +381,7 @@ html {
 .whatwedo .tabs li.active {
   cursor: default;
   font-weight: 600;
-  border-bottom: 2px solid #fd6400;
+  border-bottom: 2px solid #4a6741;
 }
 
 /* what we do ends here */
@@ -562,7 +562,7 @@ html {
 
 /* testimonials styles  */
 .testimonials {
-  background: linear-gradient(169.05deg, #003d56 33.73%, #003348 91.9%), #ffffff;
+  background: linear-gradient(169.05deg, #4a6741 33.73%, #003348 91.9%), #ffffff;
 }
 
 .testimonials .commonHeading label {
@@ -674,14 +674,14 @@ html {
 
 .differentiators_tab.active h3 {
   font-weight: 600;
-  color: #fd6400;
+  color: #4a6741;
 }
 
 .differentiators_tab.active h3::after {
   content: "";
   width: 2px;
   height: 50%;
-  background-color: #fd6400;
+  background-color: #4a6741;
   position: absolute;
   left: 0;
   top: 0;

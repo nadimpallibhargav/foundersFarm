@@ -56,7 +56,7 @@ section {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background-color: #fd6400;
+  background-color: #4a6741;
 }
 /* common heading styles end here  */
 
@@ -64,10 +64,10 @@ section {
 .orange-btn {
   display: inline-block;
   cursor: pointer;
-  background: #fd6400;
+  background: #4a6741;
   border-radius: 30px;
   padding: 14px;
-  border: 1px solid #fd6400;
+  border: 1px solid #4a6741;
   color: #ffffff;
   font-weight: 600;
   font-size: 1.6rem;
@@ -75,7 +75,7 @@ section {
 }
 .orange-btn:hover {
   background-color: #ffffff;
-  color: #fd6400;
+  color: #4a6741;
 }
 
 .white-btn {

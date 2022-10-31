@@ -20,9 +20,9 @@
       </div>
       <div class="header_links">
         <ul>
-          <li><a href="#journey" onclick="scrollToSmoothly(this, 350)">Our Journy</a></li>
+          <li><a href="#journey" onclick="scrollToSmoothly(this, 350)">Why Apah</a></li>
           <li><a href="#network" onclick="scrollToSmoothly(this, 370)">Our Network</a></li>
-          <li><a href="#join" onclick="scrollToSmoothly(this, 450)">Join Us</a></li>
+          <li><a href="#join" onclick="scrollToSmoothly(this, 450)">Partner With Us</a></li>
         </ul>
       </div>
       <button class="nav_toggle">
@@ -31,6 +31,89 @@
       </button>
     </div>
   </header>
+
+  <section id="aboutus" class="aboutus">
+    <div class="container">
+      <div class="aboutus_details">
+        <div class="aboutus_text">
+          <div class="commonHeading">
+            <h1>Apah, Sound of quenching thirst.</h1>
+            <p>The gulp of goodness from foundersfarm</p>
+          </div>          
+        </div>
+        <div class="aboutus_image">
+          <div class="aboutus_imagewrapper">
+            <img src="./assets/images/banner/apahLogo.png" alt="logo">
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="network">
+    <div class="container">
+      <div class="missionVideo">
+        <iframe src="https://www.youtube.com/embed/AhP5Tg_BLIk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="partner" id="join">
+    <div class="container">
+      <div class="partner_btn">
+        <a class="orange-btn" href="#" target="_blank">Pre book my Token.</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Starts -->
+  <div class="modal">
+    <div class="overlay"></div>
+    <div class="modal-dialog">
+      <div class="modal-body">
+        <div class="modal-close">
+          <svg onclick="hideModal(this)" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+              fill="#EDEDED" />
+          </svg>
+        </div>
+        <iframe id="video" src="" title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="commonHeading">
+        <label>Testimonials</label>
+        <h2>In Our Clients' <span class="lastword">Experience </span></h2>
+      </div>
+      <div class="testimonials_details">
+        <div class="aboutus_image">
+          <a href="javascript:void(0)" onclick="modalOpen(this)" data-src="https://www.youtube.com/embed/F1Myv4MPx8E"
+            data-modal-id="aboutusVideoModal">
+            <div class="aboutus_imagewrapper testimonials_imagewrapper">
+              <img src="assets/images/testimonials/testinomials.svg" alt="aboutus Image">
+            </div>
+            <div class="aboutus_videoicon">
+
+              <span><img src="assets/images/aboutus/videoplay.svg" alt="aboutus video icon"></span>
+              <span>Play Video</span>
+            </div>
+          </a>
+        </div>
+        <div class="testimonials_text">
+          <p>It is a pleasure to let you know that my clients are so happy with their tour. Thank you for the
+            impeccable service and compliments for both drivers. They had a wonderful time throughout.</p>
+          <h4>Gagan Puranik</h4>
+          <p>Worldwide Holidays</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <section class="banner">
     <div class="container">
@@ -58,101 +141,8 @@
     </div>
   </section>
 
-  <section class="journey" id="journey">
-
-    <div class="container">
-      <div class="commonHeading">
-        <h2>Know our story here at Anantha farms </h2>
-      </div>
-    </div>
-
-    <div class="journeyDetails">
-      <ul class="timeline">
-
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">1990</span>
-              <!-- <span class="time-wrapper"><span class="time">Year 1990</span></span> -->
-            </div>
-            <div class="desc">Antarjal Originates from the holy hills of the Avala Bayar, in the Gumpe hill Range the gradeuer of the western ghats.</div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">2005</span>
-            </div>
-            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-          </div>
-        </li>
-  
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">2014</span>
-            </div>
-            <div class="desc">Antarjal Originates from the holy hills of the Avala Bayar, in the Gumpe hill Range the gradeuer of the western ghats.</div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">2019</span>
-            </div>
-            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-          </div>
-        </li>
-  
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">2022</span>
-            </div>
-            <div class="desc">Antarjal Originates from the holy hills of the Avala Bayar, in the Gumpe hill Range the gradeuer of the western ghats.</div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">2023</span>
-            </div>
-            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-          </div>
-        </li>
-  
-        <li>
-          <div class="direction-r">
-            <div class="flag-wrapper">
-              <span class="flag">2025</span>
-            </div>
-            <div class="desc">Antarjal Originates from the holy hills of the Avala Bayar, in the Gumpe hill Range the gradeuer of the western ghats.</div>
-          </div>
-        </li>
-        
-        <li>
-          <div class="direction-l">
-            <div class="flag-wrapper">
-              <span class="flag">2027</span>
-            </div>
-            <div class="desc">My first employer. All the stuff I've learned and projects I've been working on.</div>
-          </div>
-        </li>
-        
-      </ul>
-    </div>
-
-  </section>
-
   <section id="network" class="aboutus">
     <div class="container">
-      <div class="commonHeading mobileHeading">
-        <label>Apah : Anatarjal </label>
-        <h2>Mountain womb water </h2>
-      </div>
       <div class="aboutus_details">
         <div class="aboutus_text">
           <div class="commonHeading desktopHeading">
@@ -173,17 +163,8 @@
                 Antarjal Originates from the holy hills of the Avala Bayar, in the Gumpe hill Range the gradeuer of the western ghats. It is naturally filtered through layers of clay and alluvial and reaches up with positive pressure. 
               </label>
             </li>
-            <li>
-              <span><img src="assets/images/aboutus/aboutuslist.svg" alt="aboutus Details"></span>
-              <label>Founder: 
-                <span class="blue"> <b>Aditya Swaroop</b></span>Agriprenuer at <span class="green">Anantha Farms</span> Founder <span class="yellow"><b>@Foundersfarm</b></span>
-              </label>
-            </li>
           </ul>
         </div>
-      </div>
-      <div class="missionVideo">
-        <iframe src="https://www.youtube.com/embed/AhP5Tg_BLIk?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe>
       </div>
     </div>
   </section>
@@ -192,7 +173,7 @@
     <div class="container">
       <div class="commonHeading">
         <label>Join the Foundersfarm Network </label>
-        <h2>How to Join <span class="lastword">Us <span class="dot"></span></span></h2>
+        <h2>How to Join <span class="lastword">Us </span></h2>
       </div>
       <div class="partner_details">
         <div class="partner_text">
@@ -226,50 +207,86 @@
     </div>
   </section>
 
-  <!-- Modal Starts -->
-  <div class="modal">
-    <div class="overlay"></div>
-    <div class="modal-dialog">
-      <div class="modal-body">
-        <div class="modal-close">
-          <svg onclick="hideModal(this)" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path
-              d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
-              fill="#EDEDED" />
-          </svg>
-        </div>
-        <iframe id="video" src="" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-
-  <section class="testimonials">
+  <section class="team">
     <div class="container">
       <div class="commonHeading">
-        <label>Testimonials</label>
-        <h2>In Our Clients' <span class="lastword">Experience <span class="dot"></span></span></h2>
+        <label>Team</label>
+        <h2>Meet Our <span class="lastword">Team </span></h2>
       </div>
-      <div class="testimonials_details">
-        <div class="aboutus_image">
-          <a href="javascript:void(0)" onclick="modalOpen(this)" data-src="https://www.youtube.com/embed/F1Myv4MPx8E"
-            data-modal-id="aboutusVideoModal">
-            <div class="aboutus_imagewrapper testimonials_imagewrapper">
-              <img src="assets/images/testimonials/testinomials.svg" alt="aboutus Image">
+      <div class="team_details">
+        <div class="team_card">
+          <div class="team_imagewrapper">
+            <img src="assets/images/team/prrithvirajsingh.png" alt="Prrithviraj Singh">
+            <div class="hidden">
+              <p>Prrithviraj Singh A chartered accountant by training, Prrithviraj has spent over three decades with his
+                first love – the travel and tourism industry. He brings his professional training to bear on the process
+                and practices at Eastbound Group. Having headed some of India’s largest travel companies he commands
+                immense respect and cache within the travel fraternity and clients.</p>
             </div>
-            <div class="aboutus_videoicon">
-
-              <span><img src="assets/images/aboutus/videoplay.svg" alt="aboutus video icon"></span>
-              <span>Play Video</span>
-            </div>
-          </a>
+          </div>
+          <div class="team_name">
+            <div>
+              <h3>Aditya Swaroop</h3>
+              <p>Founder @Foundersfarm</p>
+            </div>            
+          </div>
+          <div class="team_text">
+            <p>Prrithviraj Singh A chartered accountant by training, Prrithviraj has spent over three decades with his
+              first love – the travel and tourism industry. He brings his professional training to bear on the process
+              and practices at Eastbound Group. Having headed some of India’s largest travel companies he commands
+              immense respect and cache within the travel fraternity and clients.</p>
+          </div>
         </div>
-        <div class="testimonials_text">
-          <p>It is a pleasure to let you know that my clients are so happy with their tour. Thank you for the
-            impeccable service and compliments for both drivers. They had a wonderful time throughout.</p>
-          <h4>Gagan Puranik</h4>
-          <p>Worldwide Holidays</p>
+        <div class="team_card">
+          <div class="team_imagewrapper">
+            <img src="assets/images/team/anirbansengupta.png" alt="anirbansengupta">
+            <div class="hidden">
+              <p>Anirban is a senior management professional in the travel industry. His career over 20 years has been
+                in sales and marketing working with hospitality brands such as Oberoi, Hyatt, Accor Hotels, Kempinski
+                hotels. He is driving the growth trajectory of 2HUB and is instrumental in the success of this company.
+              </p>
+            </div>
+          </div>
+          <div class="team_name">
+            <div>
+              <h3>Sathvik N</h3>
+              <p>Brand Builder and Growth Stories!</p>
+            </div>
+            <a href="https://www.linkedin.com/in/ani120973" target="_blank"><img
+                src="assets/images/team/teamlinkedin.svg" alt="teamlinkedin"></a>
+          </div>
+          <div class="team_text">
+            <p>Anirban is a senior management professional in the travel industry. His career over 20 years has been in
+              sales and marketing working with hospitality brands such as Oberoi, Hyatt, Accor Hotels, Kempinski hotels.
+              He is driving the growth trajectory of 2HUB and is instrumental in the success of this company.</p>
+          </div>
+        </div>
+        <div class="team_card">
+          <div class="team_imagewrapper">
+            <img src="assets/images/team/vishalsharma.png" alt="vishalsharma">
+            <div class="hidden">
+              <p>
+                With more than 23 years of industry experience, Vishal has handled different roles managing many impressive portfolios with organisations such as Yatra, Make My Trip and Agoda.
+                <br>
+                Backed with strong influencing and negotiation skills Vishal's responsibilities at 2HUB include supply chain management, integrations, contracting and Identifying new supply channels.
+              </p>
+            </div>
+          </div>
+          <div class="team_name">
+            <div>
+              <h3>Nadimpalli Bhargav</h3>
+              <p>Website maverick and Developer</p>
+            </div>
+            <a href="https://www.linkedin.com/in/vishal-sharma" target="_blank"><img
+                src="assets/images/team/teamlinkedin.svg" alt="teamlinkedin"></a>
+          </div>
+          <div class="team_text">
+            <p>
+              With more than 23 years of industry experience, Vishal has handled different roles managing many impressive portfolios with organisations such as Yatra, Make My Trip and Agoda.
+              <br>
+              Backed with strong influencing and negotiation skills Vishal's responsibilities at 2HUB include supply chain management, integrations, contracting and Identifying new supply channels.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1,9 +1,6 @@
 .banner {
   text-align: center;
 }
-.banner .container {
-  padding-top: 70px;
-}
 .bannerContent {
   max-width: 750px;
   margin: auto;

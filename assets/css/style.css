@@ -43,23 +43,42 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 40px;
 }
 
-.aboutus .commonHeading.mobileHeading {
-  display: none;
+.aboutus .container {
+    padding-top: 70px;
 }
 
 .aboutus .commonHeading {
   margin-bottom: 37px;
 }
 
-.aboutus .missionVideo {
+#aboutus .commonHeading {
+  max-width: 450px;
+  margin: auto;
+  text-align: center;
+}
+
+#aboutus h1 {
+  margin-bottom: 10px;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 80px;
+}
+
+#aboutus p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 177%;
+  color: #464646;
+}
+
+.missionVideo {
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 25px;    
 }
-.aboutus iframe {
+iframe {
   position: absolute;
   width: 100%!important;
   height: 100%!important;
@@ -88,20 +107,15 @@ html {
 .aboutus_image .aboutus_imagewrapper {
   width: 560px;
   height: 460px;
-  border-radius: 8px;
-  position: relative;
-  overflow: hidden;
 }
 
 .aboutus_image .aboutus_imagewrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
+  object-fit: contain;
 }
 
 .aboutus_image {
-  position: relative;
   height: fit-content;
   flex-basis: 45%;
 }

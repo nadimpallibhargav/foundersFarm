@@ -10,6 +10,7 @@
 @import "./company.css";
 @import "./journey.css";
 @import "./benefits.css";
+@import "./product.css";
 
 /* common styles start  */
 body {
@@ -59,7 +60,7 @@ img {
 }
 
 #aboutus .commonHeading {
-  max-width: 450px;
+  max-width: 500px;
   margin: auto;
   text-align: center;
 }
@@ -68,7 +69,11 @@ img {
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 60px;
-  line-height: 80px;
+  line-height: 50px;
+}
+
+#aboutus h1 span {
+  font-size: 36px;
 }
 
 #aboutus p {
@@ -171,9 +176,13 @@ iframe {
   background: #fafafa;
 }
 
+.team h2 {
+  text-align: center;
+}
+
 .team_details {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -430,20 +439,16 @@ iframe {
   margin-bottom: 10px;
 }
 
-.partner_text:last-child p {
-  max-width: 314px;
-  margin: auto;
-}
-
 .partner_text p {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 180%;
   color: #464646;
+  margin-bottom: 30px;
 }
 
 .partner .orange-btn {
-  display: inline-block;
+  display: inline-block !important;
   margin: auto;
   padding: 14px 32px;
 }
@@ -803,6 +808,135 @@ iframe {
   max-width: 100%;
 }
 
+.token h2, .token p{
+  text-align: center;
+}
+
+.token p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 177%;
+  color: #464646;
+  margin-top: 50px;
+}
+
+/* modal form styles start */
+.zf_lB_Dimmer_424835{ 
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: rgb(0, 0, 0);
+  opacity: 0.8;
+  z-index: 10000000;
+}
+
+.zf_lB_Container_424835{
+position: fixed;
+background-color: white;
+margin: 0;
+margin-right: 0px;
+padding: 0;
+height: 744px;
+width:  70%;
+top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%);
+border: 7px solid none;
+max-height: calc(100% - 60px);
+z-index: 999999;
+}
+
+p{
+margin-bottom: 10px;
+}
+
+.zf_lB_Wrapper_424835{
+position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: 0;
+  margin-top: -180px;
+  z-index: 10000001;
+}
+
+.zf_main_id_424835{
+height: calc(100% - 0px);
+display: flex;
+overflow-y: auto;
+overflow-x: hidden;
+}
+
+.zf_lb_closeform_424835 {
+  position: absolute;
+  right: -20px;
+  background: #2f2e2e;
+  padding: 0;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  top: -15px;
+  cursor: pointer;
+  border: 2px solid #d9d9d9;
+}
+.zf_lb_closeform_424835:before, .zf_lb_closeform_424835:after {
+  position: absolute;
+  left: 16px;
+  content: ' ';
+  height: 19px;
+  width: 2px;
+  top: 7px;
+  background-color: #f7f7f7;
+}
+
+.zf_lb_closeform_424835:before {
+transform: rotate(45deg);
+}
+.zf_lb_closeform_424835:after {
+transform: rotate(-45deg);
+} 
+
+.fadeIn {
+-webkit-animation-name: fadeIn;
+animation-name: fadeIn;
+-webkit-animation-duration: 1s;
+animation-duration: 1s;
+-webkit-animation-fill-mode: both;
+animation-fill-mode: both;
+display: block !important;
+}
+@-webkit-keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+@keyframes fadeIn {
+0% {opacity: 0;}
+100% {opacity: 1;}
+} 
+
+
+@media only screen  and (min-width:700px) and (max-width:800px)  { 
+
+.zf_lB_Container_424835 {
+width: 650px;
+}
+}
+@media only screen  and (min-width:550px) and (max-width:698px)  {  
+ .zf_lB_Container_424835 {
+width: 500px;
+}
+
+}
+@media only screen  and (min-width:350px) and (max-width:549px)  {  
+ .zf_lB_Container_424835 {
+width: 350px;
+}
+
+}
+/* modal form styles end */
+
 /* locations styles ends here */
 
 /****************************** responsive styles *******************************************/
@@ -907,10 +1041,6 @@ iframe {
   .slider_content {
     left: 2%;
     width: 65%;
-  }
-
-  .team_details {
-    justify-content: space-evenly;
   }
 
   .team_card {

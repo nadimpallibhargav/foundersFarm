@@ -4,7 +4,7 @@
 .benefits .container {
   max-width: 960px;
 }
-.benefits .commonHeading h2 {
+.benefits .commonHeading h2, .benefits .commonHeading label {
   text-align: center;
 }
 .benefitsContent {

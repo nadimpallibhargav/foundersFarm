@@ -9,6 +9,7 @@
 @import "./mission.css";
 @import "./company.css";
 @import "./journey.css";
+@import "./benefits.css";
 
 /* common styles start  */
 body {
@@ -27,6 +28,10 @@ html {
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* about us styles start */
@@ -173,13 +178,13 @@ iframe {
 }
 
 .team_card {
-  width: 346px;
+  width: 290px;
   padding: 6px;
 }
 
 .team_imagewrapper {
-  width: 340px;
-  height: 384px;
+  width: 290px;
+  height: 250px;
   margin-bottom: 16px;
   background: #dbe7e5;
   border-radius: 10px;
@@ -835,6 +840,11 @@ iframe {
 
   .commonHeading h2 {
     font-size: 2.4rem;
+  }
+
+  #aboutus h1 {
+    font-size: 36px;
+    line-height: 45px;
   }
 
   .orange-btn {

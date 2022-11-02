@@ -3,10 +3,14 @@
     .container {
         max-width: 960px;
     }
+    .commonHeading {
+        text-align: center;
+    }
     &Content {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        gap: 30px;
     }
     h2 {
         font-size: 4rem;

@@ -606,6 +606,7 @@ iframe {
 
 .testimonials .testimonials_imagewrapper img {
   border-radius: 8px;
+  background-color: #000000;
 }
 
 .testimonials .testimonials_details {

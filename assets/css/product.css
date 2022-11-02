@@ -4,10 +4,14 @@
 .product .container {
   max-width: 960px;
 }
+.product .commonHeading {
+  text-align: center;
+}
 .productContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 .product h2 {
   font-size: 4rem;

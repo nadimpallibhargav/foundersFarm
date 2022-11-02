@@ -102,6 +102,10 @@ header .logo img {
   width: 100px;
 }
 
+.header_links ul li.logo a:hover {
+  border-bottom: none !important;
+}
+
 /* .header_links {
   display: flex;
   justify-content: space-between;

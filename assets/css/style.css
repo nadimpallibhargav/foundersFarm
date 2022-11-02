@@ -69,6 +69,7 @@ img {
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 60px;
+  text-transform: lowercase;
   line-height: 50px;
 }
 
@@ -586,7 +587,11 @@ iframe {
 
 /* testimonials styles  */
 .testimonials {
-  background: linear-gradient(169.05deg, #4a6741 33.73%, #003348 91.9%), #ffffff;
+  background: #003348;
+}
+
+.testimonials h2 {
+  text-align: center;
 }
 
 .testimonials .commonHeading label {
@@ -634,6 +639,13 @@ iframe {
   line-height: 180%;
   color: #ffffff;
   margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.testimonials .testimonials_details .testimonials_text h4 img {
+  vertical-align: middle;
+  margin-left: 20px;
 }
 
 .testimonials .testimonials_details .testimonials_text p {
@@ -642,6 +654,7 @@ iframe {
   line-height: 167%;
   color: #ffffff;
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .testimonials .testimonials_details .testimonials_text p:last-child {

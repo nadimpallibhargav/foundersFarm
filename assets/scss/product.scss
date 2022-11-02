@@ -5,6 +5,16 @@
     }
     .commonHeading {
         text-align: center;
+        h2 {
+            font-size: 50px;
+        }
+        p {
+            font-weight: 500;
+            line-height: 150%;
+            color: #808080;
+            letter-spacing: 0.03em;
+            font-size: 20px;
+        }
     }
     &Content {
         display: flex;

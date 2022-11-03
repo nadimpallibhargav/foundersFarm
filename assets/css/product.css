@@ -52,7 +52,10 @@
 .product li::marker {
   font-size: 30px;
 }
-.product button + p {
+.product a.commonBtn {
+  text-align: center;
+}
+.product a.commonBtn + p {
   font-weight: 400;
   font-size: 1.4rem;
   color: #1f1f1f;
@@ -78,7 +81,7 @@
   .product .imageWrapper {
     height: auto;
   }
-  .product button {
+  .product a.commonBtn {
     width: 100%;
   }
 }
@@ -95,6 +98,10 @@
   .product h2 {
     font-size: 2.4rem;
     line-height: 1.3em;
+  }
+  .product a.commonBtn {
+    width: 100%;
+    display: block;
   }
 }
 

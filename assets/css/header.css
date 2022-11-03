@@ -108,7 +108,7 @@ button.nav_toggle.active span:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .header_links ul li a:hover {
@@ -152,7 +152,7 @@ button.nav_toggle.active span:last-child {
     position: initial;
     align-items: flex-start;
   }
-  .a::before {
+  header .a::before {
     background-color: #ffffff;
   }
   .logo.desktop {

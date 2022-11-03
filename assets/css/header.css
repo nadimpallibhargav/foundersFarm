@@ -21,12 +21,12 @@ header.transform {
 }
 
 header img {
-  max-width: 60px;
+  max-width: 100px;
   vertical-align: bottom;
 }
 
 header.sticky img {
-  max-width: 50px;
+  max-width: 75px;
 }
 
 header.sticky .container {
@@ -152,7 +152,9 @@ button.nav_toggle.active span:last-child {
     position: initial;
     align-items: flex-start;
   }
-
+  .a::before {
+    background-color: #ffffff;
+  }
   .logo.desktop {
     display: none;
   }
@@ -215,7 +217,7 @@ button.nav_toggle.active span:last-child {
   }
 
   header .logo img {
-    max-width: 30px;
+    max-width: 50px;
   }
 
   .nav_toggle {

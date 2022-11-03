@@ -7,8 +7,6 @@
 @import "./modal.css";
 @import "./banner.css";
 @import "./mission.css";
-@import "./company.css";
-@import "./journey.css";
 @import "./benefits.css";
 @import "./product.css";
 @import "./forms.css";
@@ -1204,7 +1202,6 @@ width: 350px;
   .testimonials .testimonials_details {
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
   }
 
   .testimonials .aboutus_image {

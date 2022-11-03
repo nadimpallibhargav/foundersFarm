@@ -3,12 +3,11 @@
     &Content {
         max-width: 750px;
         margin: auto;
-        h1 {
+        h2 {
             font-size: 5rem;
             font-weight: 300;
             letter-spacing: 0.5px;
             line-height: 6.5rem;
-            padding-bottom: 55px;
             color: #191919;
         }
         p {
@@ -18,14 +17,10 @@
         }
     }    
     @media (max-width: 768px) {
-        .container {
-            padding-top: 48px;
-        }
         &Content{
-            h1 {
+            h2 {
                 font-size: 2.5rem;
                 line-height: 1.3em;
-                padding-bottom: 20px;
                 letter-spacing: 0.2px;
             }
             p {

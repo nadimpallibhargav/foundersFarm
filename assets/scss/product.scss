@@ -1,10 +1,10 @@
 .product {
-    padding: 60px 0 92px;
     .container {
         max-width: 960px;
     }
     .commonHeading {
         text-align: center;
+        margin-bottom: 0;
         h2 {
             font-size: 50px;
         }
@@ -14,6 +14,9 @@
             color: #808080;
             letter-spacing: 0.03em;
             font-size: 20px;
+            .a::before {
+                background-color: #808080;
+            }
         }
     }
     &Content {
@@ -21,6 +24,7 @@
         justify-content: space-between;
         align-items: center;
         gap: 30px;
+        margin-top: 100px;
     }
     h2 {
         font-size: 4rem;
@@ -31,11 +35,25 @@
             font-weight: 500;
             font-size: 1.7rem;
             line-height: 1.6;
-            margin-bottom: 25px;
+            margin-bottom: 0;
+        }
+    }
+    ul {
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+    li {
+        list-style-type: disc;
+        font-weight: 400;
+        font-size: 1.8rem;
+        line-height: 180%;
+        color: #000000;
+        margin-bottom: 10px;
+        &::marker {
+            font-size: 30px;
         }
     }
     button {
-        margin-bottom: 10px;
         & + p {
             font-weight: 400;
             font-size: 1.4rem;
@@ -43,7 +61,7 @@
         }    
     }
     &Text {
-        flex-basis: 50%;
+        flex-basis: 50%;        
     }
     &Image {
         flex-basis: 50%;
@@ -51,7 +69,7 @@
     .imageWrapper {
         margin-left: auto;
         max-width: 534px;
-        height: 534px;
+        height: 300px;
         img {
             object-fit: contain;
             width: 100%;
@@ -62,23 +80,23 @@
         .imageWrapper {
             height: auto;
         }
+        button {
+            width: 100%;
+        }
     }
     @media (max-width: 768px) {
-        &Content {
-            flex-direction: column-reverse;
-        }
-        &Image {
-            margin-bottom: 35px;
-        }
-        &Text {
-            text-align: center;
+        &Content {            
+            margin-top: 70px;
+            &:nth-child(even) {
+                flex-direction: column-reverse;
+            }                
+            &:nth-child(odd) {
+                flex-direction: column;
+            }                
         }
         h2 {
-            font-size: 3.4rem;
+            font-size: 2.4rem;
             line-height: 1.3em;
-        }
-        button {
-            margin-bottom: 15px;
         }
     }
 }

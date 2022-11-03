@@ -11,6 +11,7 @@
 @import "./journey.css";
 @import "./benefits.css";
 @import "./product.css";
+@import "./forms.css";
 
 /* common styles start  */
 body {
@@ -65,7 +66,7 @@ img {
   text-align: center;
 }
 
-#aboutus h1 {
+#aboutus h1, #aboutus span.a {
   margin-bottom: 10px;
   font-weight: 800;
   font-size: 60px;
@@ -75,6 +76,12 @@ img {
 
 #aboutus h1 span {
   font-size: 36px;
+}
+
+h1 .a::before {
+  top: 15px;
+  background-color: #175ca4;
+  height: 3px;
 }
 
 #aboutus p {
@@ -420,7 +427,6 @@ iframe {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 35px;
 }
 
 .partner_text {
@@ -452,6 +458,9 @@ iframe {
   display: inline-block !important;
   margin: auto;
   padding: 14px 32px;
+}
+.partner img {
+  max-width: 80px;
 }
 
 .partner_btn {
@@ -589,7 +598,17 @@ iframe {
 .testimonials {
   background: #003348;
 }
-
+.testimonials .social a{
+  display: inline-block;
+}
+.testimonials .social{
+  display: flex;
+  gap: 20px;
+}
+.testimonials .social a img{
+  max-width: 40px;
+  border-radius: 25px;
+}
 .testimonials h2 {
   text-align: center;
 }
@@ -603,14 +622,14 @@ iframe {
 }
 
 .testimonials .testimonials_imagewrapper {
-  width: 550px;
+  width: 300px;
   height: 300px;
-  border-radius: 8px;
-  flex-basis: 46%;
+  border-radius: 50%;
+  flex-basis: 25%;
 }
 
 .testimonials .testimonials_imagewrapper img {
-  border-radius: 8px;
+  border-radius: 50%;
   background-color: #000000;
 }
 
@@ -629,7 +648,7 @@ iframe {
 }
 
 .testimonials .testimonials_details .testimonials_text {
-  flex-basis: 45%;
+  flex-basis: 65%;
   padding-left: 24px;
 }
 
@@ -653,7 +672,7 @@ iframe {
   font-size: 2.2rem;
   line-height: 167%;
   color: #ffffff;
-  margin-bottom: 0;
+  margin-bottom: 20px;
   text-align: justify;
 }
 
@@ -980,7 +999,12 @@ width: 350px;
   .commonHeading {
     margin-bottom: 42px;
   }
-
+  .vision {
+    margin-bottom: 20px;
+  }
+  .vision .commonHeading {
+    margin-bottom: 20px;
+  }
   .commonHeading label {
     font-size: 1.2rem;
     margin-bottom: 8px;
@@ -990,9 +1014,13 @@ width: 350px;
     font-size: 2.4rem;
   }
 
-  #aboutus h1 {
+  #aboutus h1, #aboutus h1 span.a {
     font-size: 36px;
     line-height: 45px;
+  }
+
+  #aboutus h1 span.a::before {
+    top: 10px;
   }
 
   .orange-btn {
@@ -1008,6 +1036,10 @@ width: 350px;
   .testimonials .testimonials_details .testimonials_text p {
     font-size: 1.4rem;
     line-height: 180%;
+  }
+
+  .testimonials .testimonials_details {
+    align-items: center;
   }
 
   .testimonials .testimonials_details .testimonials_text h4 {
@@ -1032,7 +1064,7 @@ width: 350px;
   }
 
   .partner_text {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 
   .partner_text:last-child {
@@ -1049,7 +1081,7 @@ width: 350px;
   }
 
   header .container {
-    padding: 15px 25px;
+    padding: 6px 25px;
   }
 
   .slider_content {
@@ -1102,6 +1134,10 @@ width: 350px;
     width: 100%;
   }
 
+  h1 {
+    margin-top: 60px;
+  }
+
   .footer .subscribe_section {
     flex-direction: column;
   }
@@ -1138,11 +1174,10 @@ width: 350px;
   .aboutus_details {
     flex-direction: column-reverse;
     position: relative;
-    align-items: flex-start;
   }
 
   .aboutus_image {
-    margin-bottom: 42px;
+    margin-bottom: 10px;
   }
 
   .aboutus_text {
@@ -1348,7 +1383,7 @@ width: 350px;
 
   .aboutus_image .aboutus_imagewrapper {
     width: 100%;
-    height: auto;
+    height: 200px;
   }
 
   .aboutus .commonHeading {
@@ -1413,10 +1448,6 @@ width: 350px;
 
   .partner .orange-btn {
     padding: 10px 28px;
-  }
-
-  .partner_details {
-    margin-bottom: 40px;
   }
 
   .whatwedo .panels_details .panels_text {

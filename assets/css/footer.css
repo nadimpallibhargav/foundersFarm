@@ -200,7 +200,9 @@
   align-items: center;
 }
 
-
+.footer_copyrights p{
+  margin: 0;
+}
 
 .footer_copyrights a,
 .footer_copyrights p,
@@ -208,13 +210,7 @@
   font-weight: 400;
   font-size: 1.2rem;
   line-height: 150%;
-  /* color: #ccd6db; */
 }
-
-/* .footer_copyrights p,
-.footer_copyrights ul li:last-child a {
-  color: rgba(255, 255, 255, 0.8);
-} */
 
 .footer_copyrights ul li:last-child a:hover {
   color: #ffffff;

@@ -4,9 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FoundersFarm</title>
-  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet" />
-  <!-- css -->
   <link href="./assets/css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css">
 </head>
@@ -16,15 +14,17 @@
   <header id="header">
     <div class="container">
       <div class="logo mobile">
-        <a href="index.html"> <img src="./assets/images/footer/logo.jpg"></a>
+        <a href="index.html"> <img src="./assets/images/footer/logo.jpg" alt="logo"></a>
       </div>
       <div class="header_links">
         <ul>
-          <li><a href="#network" onclick="scrollToSmoothly(this, 350)">Why apah</a></li>
+          <li><a href="#apahAvatar" onclick="scrollToSmoothly(this, 350)"><span class="a">a</span>pah Avatar </a></li>
+          <li><a href="#apahAntarjal" onclick="scrollToSmoothly(this, 350)"><span class="a">a</span>pah Antarjal</a></li>
           <li class="logo desktop">
-            <a href="index.html"> <img src="./assets/images/footer/logo.jpg"></a>
+            <a href="index.html"> <img src="./assets/images/footer/logo.jpg" alt="logo"></a>
           </li>
-          <li><a href="#join" onclick="scrollToSmoothly(this, 450)">Partner With Us</a></li>
+          <li><a href="#partner" onclick="scrollToSmoothly(this, 450)">Partner With Us</a></li>
+          <li><a href="#follow" onclick="scrollToSmoothly(this, 450)">Follow foundersfarm</a></li>
         </ul>
       </div>
       <button class="nav_toggle">
@@ -39,7 +39,7 @@
       <div class="aboutus_details">
         <div class="aboutus_text">
           <div class="commonHeading">
-            <h1> <b class="blue">apah</b>, <br> <span>Sound of Quenching Thirst</span></h1>
+            <h1> <b class="blue"><span class="a">a</span>pah</b>, <br> <span>Sound of Quenching Thirst</span></h1>
             <p>The Gulp of Goodness from foundersfarm</p>
           </div>          
         </div>
@@ -55,10 +55,10 @@
   <section class="banner">
     <div class="container">
       <div class="bannerContent">
-        <h1>
+        <h2>
           Our mission is to connect <span class="blue">Founders</span> and <sapn class="green">Farms</sapn>. <br>
           <span class="blue">Founders</span> and <span class="green">Farmers</span> are 2 sides of the same coin. Both seed an idea, connect teamwork with dreamwork & <span class="yellow">harvest happiness</span>.   
-        </h1>
+        </h2>
       </div>
     </div>
   </section>
@@ -74,17 +74,21 @@
     </div>
   </section>
 
-  <section class='product'>
+  <section class='product' id="apahAvatar">
     <div class="container">    
         <div class="commonHeading">
-          <h2>apah Avatar</h2>
-          <label style="text-transform: lowercase;"> At your hands today is the water that brings together traditional <span class="red">spices</span> and fresh <spa class="green">herbs</spa> infused through apah Avatar. Inspired by the wisdom of our <i>Ajji's</i>, apah in Sanskrit stands for <span class="blue">Water</span>, and also is an expression-the sound of quenching thirst, <span class="green"><b>AAAPAH</b></span>!</label>
+          <h2><span class="a">a</span>pah Avatar</h2>
+          <p style="text-transform: lowercase;"> At your hands today is the water that brings together traditional <span class="red">spices</span> and fresh <spa class="green">herbs</spa> infused through <span class="a">a</span>pah Avatar. Inspired by the wisdom of our <i>Ajji's</i>, <span class="a">a</span>pah in Sanskrit stands for <span class="blue">Water</span>, and also is an expression-the sound of quenching thirst, <span class="green"><b>AAAPAH</b></span>!</p>
         </div>        
         <div class="productContent">           
             <div class="productText">
                 <h2>AVATAR CARDAMOM WATER</h2>
-                <p>Good for Digestion <br>Helps in Sleep <br>Strenghtens Hair</p>
-                <button class="commonBtn">⚡Buy Now</button>                
+                <ul>
+                  <li>Good for Digestion</li>
+                  <li>Helps in Sleep </li>
+                  <li>Strenghtens Hair</li>                 
+                </ul>
+                <a href="javascript:void(0)" onclick="cardamomModalOpen(this)" data-src="https://www.youtube.com/embed/mFmzHEWKQ5g" class="commonBtn">⚡Buy Now</a>
             </div>
             <div class="productImage">
                 <div class="imageWrapper">
@@ -100,27 +104,34 @@
             </div>
             <div class="productText">
                 <h2>AVATAR CLOVE WATER</h2>
-                <p>Good for Oral Health <br> Improves Skin <br> Soothes Mental Fatigue</p>
-                <button class="commonBtn">⚡Buy Now</button>                
+                <ul>
+                  <li>Good for Oral Health</li>
+                  <li>Improves Skin</li>
+                  <li>Soothes Mental Fatigue</li>
+                </ul>
+                <a href="javascript:void(0)" onclick="cloveModalOpen(this)" data-src="https://www.youtube.com/embed/mFmzHEWKQ5g" class="commonBtn">⚡Buy Now</a>
             </div>            
         </div>
         <div class="productContent">           
           <div class="productText">
-              <h2>AVATAR CINNAMOM WATER</h2>
-              <p>Boosts Immunity <br> Imporves Gut Health <br> Relieves Stress</p>
-              <button class="commonBtn">⚡Buy Now</button>              
+              <h2>AVATAR CINNAMON WATER</h2>
+              <ul>
+                <li>Boosts Immunity</li>
+                <li>Imporves Gut Health</li>
+                <li>Relieves Stress</li>
+              </ul>
+              <a href="javascript:void(0)" onclick="cinnamonModalOpen(this)" data-src="https://www.youtube.com/embed/mFmzHEWKQ5g" class="commonBtn">⚡Buy Now</a>
           </div>
           <div class="productImage">
               <div class="imageWrapper">
-                  <img src='./assets/images/products/cinnamom.jpg' alt="AVATAR CINNAMOM" />
+                  <img src='assets/images/products/cinnamom.webp' alt="AVATAR CINNAMOM" />
               </div>
           </div>
         </div>
     </div>
   </section>
 
-  <!-- Modal Starts -->
-  <div class="modal">
+  <div class="modal cardamom">
     <div class="overlay"></div>
     <div class="modal-dialog">
       <div class="modal-body">
@@ -131,17 +142,47 @@
               fill="#EDEDED" />
           </svg>
         </div>
-        <iframe id="video" src="" title="YouTube video player" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen></iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdwhAYs9MHCx7s9J4nJ8TC8v8019HZGC1nzN6gpkTDe1ebU8g/viewform?embedded=true" width="640" height="1073" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
   </div>
 
-  <section class='product'>
+  <div class="modal clove">
+    <div class="overlay"></div>
+    <div class="modal-dialog">
+      <div class="modal-body">
+        <div class="modal-close">
+          <svg onclick="hideModal(this)" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+              fill="#EDEDED" />
+          </svg>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd4qEBFjm5ATKd71oq_JZsI7hRpV6XHwh1wmheGvuhyncr9MA/viewform?embedded=true" width="640" height="855" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal cinnamon">
+    <div class="overlay"></div>
+    <div class="modal-dialog">
+      <div class="modal-body">
+        <div class="modal-close">
+          <svg onclick="hideModal(this)" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+              fill="#EDEDED" />
+          </svg>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5L0FJ1xYvMGHQ_ZAjIpdp5EMgS9Xt3iIOROFeoYCx5LNW-g/viewform?embedded=true" width="640" height="812" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+    </div>
+  </div>
+
+  <section class='product' id="apahAntarjal">
     <div class="container">    
         <div class="commonHeading">
-          <h2>apah Antarjal</h2>
+          <h2><span class="a">a</span>pah Antarjal</h2>
           <p style="text-transform: lowercase;"> 
             Natural mountain water sourced from the foothills of western ghats.
             This bio-active <span class="green">artesian</span> water is charged with natural minerals and filtered through layers of clay, alluvial and risen through the <span class="blue">positive pressure</span> of the <span class="yellow">Gumpe hill</span>  range. 
@@ -150,7 +191,7 @@
     </div>
   </section>
 
-  <section id="network">
+  <section id="network" class="vision">
     <div class="container">
       <div class="commonHeading">
         <h2 style="text-align: left;">Founder's Vision</h2>
@@ -161,44 +202,44 @@
     </div>
   </section>
 
-  <section class="partner" id="join">
+  <section class="partner" id="partner">
     <div class="container">
       <div class="commonHeading">
         <h2 style="text-transform: initial;">Join the <span class="green">foundersfarm</span> network </h2>
       </div>
       <div class="partner_details">
         <div class="partner_text">
-          <img src="assets/images/partner/resgistration.svg" alt="become partner">
+          <img src="assets/images/partner/farmNest.png" alt="farm nest">
           <h3>Farm Nest</h3>
           <p>
             An eco-farm stay with lush green hills to trek and beaches to explore with your tribe.  
           </p>
-          <a id="zf_button_424835" style="display: none;" class="orange-btn" >Book your Visit</a>
+          <a id="zf_button_318726" style="display: none;" class="orange-btn" >Book your Visit</a>
         </div>
         <div class="partner_text">
-          <img src="assets/images/partner/getaccountactivated.svg" alt="become partner">
+          <img src="assets/images/partner/droplet.png" alt="water droplet">
           <h3>Book my Gulp </h3>
           <p>
             Untouched-Unfiltered artesian water from mountain to mouth. 
           </p>
-          <a class="orange-btn">Pre-order  Antarjal</a>
+          <a id="zf_button_630795" style="display: none;" class="orange-btn">Pre-order  Antarjal</a>
         </div>
         <div class="partner_text">
-          <img src="assets/images/partner/bookingsforcustomer.svg" alt="become partner">
+          <img src="assets/images/partner/invest.png" alt="invest">
           <h3>foundersfarm Network </h3>
           <p>
             Invest in farms which build seed ideas, just like a plant that journey's from Seed-Sapling to Sprout.     
           </p>
-          <a class="orange-btn">Invest in foundersfarm</a>
+          <a id="zf_button_159309" style="display: none;" class="orange-btn">Invest in foundersfarm</a>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="testimonials">
+  <section class="testimonials" id="follow">
     <div class="container">
       <div class="commonHeading">
-        <h2>About Me</h2>
+        <h2>Connect with me</h2>
       </div>
       <div class="testimonials_details">
         <div class="aboutus_image">
@@ -209,18 +250,27 @@
         <div class="testimonials_text">
           <p>Talk to me about foundersfarm initiative, a distributed economy venture that flows into our community of Antarjal. Soon to be tokenized to create, share and realize our collective value. </p>
           <h4>
-            Aditya Swaroop 
-            <a href="https://www.linkedin.com/in/adi9/" target="_blank"><img
-            src="assets/images/team/teamlinkedin.svg" alt="teamlinkedin">
-            </a>
+            Aditya Swaroop             
           </h4>
           <p>Agripreneur at Anantha Farm</p>
-        </div>
+          <div class="social">
+            <a href="https://www.linkedin.com/in/adi9/" target="_blank">
+              <img src="assets/images/footer/linkedin.jpeg" alt="linkedin">
+            </a>
+            <a href="https://www.youtube.com/channel/UCLPKsofipQ7MvwHYIjluZ5Q" target="_blank">
+              <img src="assets/images/footer/youtube.jpeg" alt="youtube">
+            </a>
+            <a href="https://www.instagram.com/founders_farm?r=nametag" target="_blank">
+              <img src="assets/images/footer/instagram.jpeg" alt="instagram">
+            </a>            
+            <a href="mailto:apahwater9@gmail.com" target="_blank">
+              <img src="assets/images/footer/gmail.jpeg" alt="gmail">
+            </a>
+          </div>
+        </div>        
       </div>
     </div>
   </section>
-
-  <!-- Help us spread the word and share foundersfarm initiative with your family and friends  -->
 
   <footer class="footer">
     <div class="container">
@@ -230,9 +280,6 @@
     </div>
   </footer>
 
-
-
-  <!--Sliders script-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
   <script src="./assets/js/slick.js"></script>

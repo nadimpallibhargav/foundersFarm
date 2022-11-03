@@ -5,12 +5,11 @@
   max-width: 750px;
   margin: auto;
 }
-.bannerContent h1 {
+.bannerContent h2 {
   font-size: 5rem;
   font-weight: 300;
   letter-spacing: 0.5px;
   line-height: 6.5rem;
-  padding-bottom: 55px;
   color: #191919;
 }
 .bannerContent p {
@@ -19,13 +18,9 @@
   color: #808080;
 }
 @media (max-width: 768px) {
-  .banner .container {
-    padding-top: 48px;
-  }
-  .bannerContent h1 {
+  .bannerContent h2 {
     font-size: 2.5rem;
     line-height: 1.3em;
-    padding-bottom: 20px;
     letter-spacing: 0.2px;
   }
   .bannerContent p {

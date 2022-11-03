@@ -26,15 +26,21 @@ $(".tabs li").on("click", function () {
 });
 
 // Modal Functionality
-function modalOpen(obj) {
+function cardamomModalOpen(obj) {
   $("body").addClass("modal-show");
-  $(".modal").addClass("modal-open");
-  let o = $(obj).attr("data-src");
-  $("#video").attr(
-    "src",
-    o +
-      "?autoplay=1&showinfo=0&modestbranding=1&rel=0&mute=0&amp;wmode=transparent&amp;mode=opaque&amp;controls=1;"
-  );
+  $(".modal.cardamom").addClass("modal-open");
+}
+
+// Modal Functionality
+function cloveModalOpen(obj) {
+  $("body").addClass("modal-show");
+  $(".modal.clove").addClass("modal-open");
+}
+
+// Modal Functionality
+function cinnamonModalOpen(obj) {
+  $("body").addClass("modal-show");
+  $(".modal.cinnamon").addClass("modal-open");
 }
 
 function hideModal(obj) {
@@ -279,6 +285,473 @@ function scrollToSmoothly(obj, time) {
 			var buttonElem = document.getElementById("zf_button_424835");
 			buttonElem.style.display = "block";
 			buttonElem.addEventListener("click", showZForm_424835);
+		
+			
+	}catch(e){}
+})();
+
+
+// try product form     
+
+(function() {
+	try{
+
+			if( document.readyState == "complete" ){ 
+				onloadActions_318726();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_318726();
+			  	}, false);
+			}
+
+			function onloadActions_318726(){
+				constructDiv_318726();
+				
+			}
+
+			function constructDiv_318726(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4_318726');
+				iframeDiv.setAttribute('class','zf_main_id_318726');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_318726');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_318726');
+				
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_318726');
+				containerDiv.setAttribute('class','zf_lB_Container_318726 ');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+				
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_318726');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_318726');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_318726');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			function showZForm_318726(){
+				var iframe = document.getElementById("ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4_318726").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_318726();
+					
+				} 
+				document.getElementById("formsLightBox_318726").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+			}
+
+			function loadZForm_318726() {
+				var iframe = document.getElementById("ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4_318726").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_318726('https://forms.zohopublic.in/apahwater9/form/Tryourproduct/formperma/ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4?zf_rszfm=1');
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4_318726");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_318726");
+					deleteForm.onclick = function deleteZForm_318726() {
+						var divCont = document.getElementById("formsLightBox_318726");
+						divCont.style.display="none";
+						document.body.style.overflow = "";
+
+						var iframe = document.getElementById("ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4_318726").getElementsByTagName("iframe")[0];
+						iframe.remove();
+					}
+
+					
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("ZL7tao-IeImz-LhhP8paMR544lgllrO0ZoMF9JGhMT4_318726").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+									iframe.style.minHeight = zf_ifrm_ht_nw;
+										var containerDiv = document.getElementById("containerDiv_318726");
+										containerDiv.style.height=zf_ifrm_ht_nw;
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+			
+
+			function getsrcurlZForm_318726(zf_src) {
+				try {
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			var buttonElem = document.getElementById("zf_button_318726");
+			buttonElem.style.display = "block";
+			buttonElem.addEventListener("click", showZForm_318726);
+		
+			
+	}catch(e){}
+})();
+
+// clove 
+
+(function() {
+	try{
+
+			if( document.readyState == "complete" ){ 
+				onloadActions_630795();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_630795();
+			  	}, false);
+			}
+
+			function onloadActions_630795(){
+				constructDiv_630795();
+				
+			}
+
+			function constructDiv_630795(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo_630795');
+				iframeDiv.setAttribute('class','zf_main_id_630795');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_630795');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_630795');
+				
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_630795');
+				containerDiv.setAttribute('class','zf_lB_Container_630795 fadeIn');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+				
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_630795');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_630795');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_630795');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			function showZForm_630795(){
+				var iframe = document.getElementById("VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo_630795").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_630795();
+					
+				} 
+				document.getElementById("formsLightBox_630795").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+			}
+
+			function loadZForm_630795() {
+				var iframe = document.getElementById("VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo_630795").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_630795('https://forms.zohopublic.in/apahwater9/form/TryourProductAvatarCloveWater/formperma/VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo?zf_rszfm=1');
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo_630795");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_630795");
+					deleteForm.onclick = function deleteZForm_630795() {
+						var divCont = document.getElementById("formsLightBox_630795");
+						divCont.style.display="none";
+						document.body.style.overflow = "";
+
+						var iframe = document.getElementById("VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo_630795").getElementsByTagName("iframe")[0];
+						iframe.remove();
+					}
+
+					
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("VsML4M9Ss9C7KTcU8qw8zMQQVMRnmyrTx3yJ_kNdmfo_630795").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+									iframe.style.minHeight = zf_ifrm_ht_nw;
+										var containerDiv = document.getElementById("containerDiv_630795");
+										containerDiv.style.height=zf_ifrm_ht_nw;
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+			
+
+			function getsrcurlZForm_630795(zf_src) {
+				try {
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			var buttonElem = document.getElementById("zf_button_630795");
+			buttonElem.style.display = "block";
+			buttonElem.addEventListener("click", showZForm_630795);
+		
+			
+	}catch(e){}
+})();
+
+
+// cinammon 
+
+(function() {
+	try{
+
+			if( document.readyState == "complete" ){ 
+				onloadActions_159309();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_159309();
+			  	}, false);
+			}
+
+			function onloadActions_159309(){
+				constructDiv_159309();
+				
+			}
+
+			function constructDiv_159309(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE_159309');
+				iframeDiv.setAttribute('class','zf_main_id_159309');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_159309');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_159309');
+				
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_159309');
+				containerDiv.setAttribute('class','zf_lB_Container_159309 fadeIn');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+				
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_159309');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_159309');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_159309');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			function showZForm_159309(){
+				var iframe = document.getElementById("Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE_159309").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_159309();
+					
+				} 
+				document.getElementById("formsLightBox_159309").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+			}
+
+			function loadZForm_159309() {
+				var iframe = document.getElementById("Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE_159309").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					f.src = getsrcurlZForm_159309('https://forms.zohopublic.in/apahwater9/form/TryourProductAvatarCinnamonWater/formperma/Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE?zf_rszfm=1');
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE_159309");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_159309");
+					deleteForm.onclick = function deleteZForm_159309() {
+						var divCont = document.getElementById("formsLightBox_159309");
+						divCont.style.display="none";
+						document.body.style.overflow = "";
+
+						var iframe = document.getElementById("Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE_159309").getElementsByTagName("iframe")[0];
+						iframe.remove();
+					}
+
+					
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("Z1w3jCaRD9pTYcM79maVKO73iZ5AtYz-xtYuIgfuPLE_159309").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+									iframe.style.minHeight = zf_ifrm_ht_nw;
+										var containerDiv = document.getElementById("containerDiv_159309");
+										containerDiv.style.height=zf_ifrm_ht_nw;
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+			
+
+			function getsrcurlZForm_159309(zf_src) {
+				try {
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			var buttonElem = document.getElementById("zf_button_159309");
+			buttonElem.style.display = "block";
+			buttonElem.addEventListener("click", showZForm_159309);
 		
 			
 	}catch(e){}

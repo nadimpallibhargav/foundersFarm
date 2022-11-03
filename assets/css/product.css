@@ -1,11 +1,9 @@
-.product {
-  padding: 60px 0 92px;
-}
 .product .container {
   max-width: 960px;
 }
 .product .commonHeading {
   text-align: center;
+  margin-bottom: 0;
 }
 .product .commonHeading h2 {
   font-size: 50px;
@@ -17,11 +15,15 @@
   letter-spacing: 0.03em;
   font-size: 20px;
 }
+.product .commonHeading p .a::before {
+  background-color: #808080;
+}
 .productContent {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
+  margin-top: 100px;
 }
 .product h2 {
   font-size: 4rem;
@@ -33,10 +35,22 @@
   font-weight: 500;
   font-size: 1.7rem;
   line-height: 1.6;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 }
-.product button {
+.product ul {
+  padding-left: 30px;
+  margin-bottom: 20px;
+}
+.product li {
+  list-style-type: disc;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 180%;
+  color: #000000;
   margin-bottom: 10px;
+}
+.product li::marker {
+  font-size: 30px;
 }
 .product button + p {
   font-weight: 400;
@@ -52,7 +66,7 @@
 .product .imageWrapper {
   margin-left: auto;
   max-width: 534px;
-  height: 534px;
+  height: 300px;
 }
 .product .imageWrapper img {
   -o-object-fit: contain;
@@ -64,23 +78,23 @@
   .product .imageWrapper {
     height: auto;
   }
+  .product button {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   .productContent {
+    margin-top: 70px;
+  }
+  .productContent:nth-child(even) {
     flex-direction: column-reverse;
   }
-  .productImage {
-    margin-bottom: 35px;
-  }
-  .productText {
-    text-align: center;
+  .productContent:nth-child(odd) {
+    flex-direction: column;
   }
   .product h2 {
-    font-size: 3.4rem;
+    font-size: 2.4rem;
     line-height: 1.3em;
-  }
-  .product button {
-    margin-bottom: 15px;
   }
 }
 

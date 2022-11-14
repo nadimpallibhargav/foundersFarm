@@ -77,6 +77,25 @@
   width: 100%;
   height: 100%;
 }
+.productButton {
+  padding-top: 100px;
+  text-align: center;
+}
+.productButton a {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f9ab00;
+}
+.productButton img {
+  margin-right: 10px;
+  max-width: 24px;
+  vertical-align: middle;
+}
 @media (max-width: 991px) {
   .product .imageWrapper {
     height: auto;
@@ -102,6 +121,15 @@
   .product a.commonBtn {
     width: 100%;
     display: block;
+  }
+}
+@media (max-width: 575px) {
+  .productContent {
+    align-items: initial;
+  }
+  .productButton a {
+    width: 100%;
+    max-width: 100%;
   }
 }
 

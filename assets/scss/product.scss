@@ -77,6 +77,25 @@
             height: 100%;
         }
     }
+    &Button {
+        padding-top: 100px;
+        text-align: center;
+        a {
+            display: flex;
+            width: 100%;
+            max-width: 350px;
+            margin: auto;
+            font-size: 24px;
+            align-items: center;
+            justify-content: center;      
+            border: 2px solid #f9ab00;      
+        }
+        img {
+            margin-right: 10px;
+            max-width: 24px;
+            vertical-align: middle;
+        }
+    }
     @media (max-width: 991px) {
         .imageWrapper {
             height: auto;
@@ -102,6 +121,17 @@
         a.commonBtn {
             width: 100%;
             display: block;
+        }        
+    }
+    @media (max-width: 575px) {
+        &Content {            
+            align-items: initial;
+        }
+        &Button {
+            a {
+                width: 100%;
+                max-width: 100%;
+            }
         }
     }
 }

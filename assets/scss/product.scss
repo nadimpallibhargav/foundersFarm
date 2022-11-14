@@ -62,7 +62,8 @@
         }    
     }
     &Text {
-        flex-basis: 50%;        
+        flex-basis: 50%;
+        flex-shrink: 0;        
     }
     &Image {
         flex-basis: 50%;
@@ -73,7 +74,8 @@
         height: 300px;
         img {
             object-fit: contain;
-            width: 100%;
+            // width: 100%;
+            margin: auto;
             height: 100%;
         }
     }
